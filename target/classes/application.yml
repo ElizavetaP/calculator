@@ -1,0 +1,15 @@
+## YAML Template.
+---
+server:
+  port: ${SERVER_PORT:5000}
+
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+      WRITE_ENUMS_USING_TO_STRING: true
+    deserialization:
+      READ_ENUMS_USING_TO_STRING: true
+  application:
+    name: reksoft
+
